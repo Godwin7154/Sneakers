@@ -23,7 +23,6 @@ nav{
 }
 nav ul{
     float: left;
-    margin-left: 20px; 
 }
 nav ul li{
     display: inline-block;
@@ -34,7 +33,7 @@ nav ul li a{
     color: rgb(0, 0, 0);
     font-size: 25px;
     color: rgb(132, 131, 131);
-    margin: 0 25px;
+    margin: 0 20px;
     
 }
 nav ul li a:hover{
@@ -253,7 +252,7 @@ input{
         height: 100px;
         background: rgb(218, 147, 41);
         top: 130px;
-        left: -110%;
+        left: -900px;
         text-align: center;
         transition: .5s;
     }
@@ -271,23 +270,59 @@ input{
     }
     .main{
         display: flex;
-        width: 500px;
-        height: 1500px;
+        width: 100%;
+        height: 100%;
         flex-wrap: wrap;
         
         
     }
     .dv1{
         margin-top: 150px;
-        height: 500px;
-        width: 500px;
-        margin-left: 100px;
+        height: 100%;
+        width: 100%;
+        margin-left: 5px;
     
 }
 #dv11{
-    margin-top: -300px;
+    margin-top: 0px;
     margin-left: 50px;
 }
     
+}
+@media (max-width: 300px){
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        background: rgb(218, 147, 41);
+        top: 130px;
+        text-align: center;
+        transition: .5s;
+    }
+    nav ul li{
+        float: left;
+        word-spacing: 1px;
+        font-size: 12px; 
+    }
+    .main{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+        
+        
+    }
+    .dv1{
+        margin-top: 150px;
+        height: 100%;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 0px;
+    
+    }
+    #dv11{
+        margin-top: 0px;
+        margin-left: 10px;
+    }
 }
 
