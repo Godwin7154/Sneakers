@@ -62,12 +62,15 @@ nav ul li a:hover{
     gap: 100px;
     justify-content: center;
     width: 100%;
-    height: 710px;
+    height: 100%;
+    flex-wrap: wrap;
     
 }
 .dv1{
     height: 710px;
     width: 500px;
+    
+    
 }
 
 
@@ -246,6 +249,9 @@ input{
     .checkbtn{
         display: block;
     }
+    #mg1, #mg2{
+        display: none;
+    }
     ul{
         position: fixed;
         width: 100%;
@@ -258,12 +264,18 @@ input{
     }
     nav ul li{
         margin-top: -10px; 
+        
     }
     nav ul li a{
         color: white;
+        margin: 0 10px;
+        
     }
     nav ul li a:hover{
         color: #000000;
+        background: #ffffff;
+        border-radius: 10px;
+        padding: 10px;
     }
     #check:checked ~ ul{
         left: 0;
@@ -280,49 +292,90 @@ input{
         margin-top: 150px;
         height: 100%;
         width: 100%;
-        margin-left: 5px;
+        padding: 20px;
+        display: block;
     
-}
+    }
 #dv11{
-    margin-top: 0px;
-    margin-left: 50px;
-}
-    
-}
-@media (max-width: 300px){
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100px;
-        background: rgb(218, 147, 41);
-        top: 130px;
-        text-align: center;
-        transition: .5s;
+    margin-top: -100px;
+    margin-bottom: 10px;
     }
-    nav ul li{
-        float: left;
-        word-spacing: 1px;
-        font-size: 12px; 
-    }
-    .main{
-        display: flex;
-        width: 100%;
-        height: 100%;
-        flex-wrap: wrap;
-        
+    .mg13{
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+        margin-left: 50px;  
         
     }
-    .dv1{
-        margin-top: 150px;
-        height: 100%;
-        width: 100%;
+    .mg18{
+        width: 80px;
+        height: 80px;
+        border-radius: 10px; 
         margin-left: 10px;
-        margin-right: 0px;
+        
+    }
+    .mg17{
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+        margin-left: 28px;
+    }
+    .mg19{
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+        margin-left: 28px;
+    }
+    .mg16{
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+        margin-left: 30px;
+        
+    }
+    
+}
+@media (max-width: 700px){
+    .mg13{
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+        margin-left: 30px;  
+        
+    }
+    .mg18{
+        width: 60px;
+        height: 60px;
+        border-radius: 10px; 
+        margin-left: 25px;
+        
+    }
+    .mg17{
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        margin-left: 15px;
+    }
+    .mg19{
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        margin-left: 20px;
+    }
+    .mg16{
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        margin-left: 20px;
+        
+    }
+    .h1{
+        font-size: 16px;
+        color: #eea300;
+        padding-bottom: 0px;
+        margin-top: 50px;
     
     }
-    #dv11{
-        margin-top: 0px;
-        margin-left: 10px;
-    }
 }
+
 
